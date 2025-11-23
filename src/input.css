@@ -1,0 +1,143 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --background--color: #1a1a1a;
+  --text--color: #ffffff;
+  --footer--color: #f1f0ea;
+  --menu--color: #534b52;
+  --navbar--color: #474448;
+  --icon-width: 24px;
+  --page--size: 32px;
+}
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1a1a1a;
+  color: var(--text--color);
+  height: auto;
+}
+.nav-header {
+  transition: opacity 0.1s ease;
+}
+.nav-header:hover {
+  opacity: 0.7;
+}
+#sidebar {
+  position: fixed;
+  background-color: var(--navbar--color);
+  height: calc(100% - 32px);
+  max-width: 60%;
+  border-radius: 0 32px 32px 0;
+  z-index: 1;
+  padding: 12px 48px 12px 0;
+  transition: 0.52s ease;
+}
+
+/* stylize menu bar */
+.hiddenCuz {
+  transform: translate(-100%, 0);
+}
+
+.nav-link {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  padding: 12px 15px;
+  border-radius: 0 18px 18px 0;
+  transition: 0.4s ease;
+  transform: translate(0, 50px);
+}
+.nav-link:hover {
+  color: var(--navbar--color);
+  background-color: var(--footer--color);
+}
+#sidebar #nav-list {
+  list-style: none;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+#menu-bar {
+  margin: 12px;
+  color: var(--background--color);
+  text-decoration: bold;
+  background-color: var(--footer--color);
+  padding: 7px 10px;
+  text-align: center;
+  border-radius: 0 12px 12px 0;
+}
+
+#nav-header {
+  background-color: #474448;
+  padding: 0 20px;
+  border-radius: 28px;
+  align-items: center;
+}
+
+#icon {
+  filter: invert(100%);
+  cursor: pointer;
+  max-width: 42px;
+}
+#svg {
+  cursor: pointer;
+  max-width: 32px;
+}
+#page {
+  font-size: var(--page--size);
+}
+#dot {
+  max-width: 12px;
+  filter: invert(100%);
+}
+#header {
+  font-size: var(--text-2xl);
+}
+#line {
+  position: inherit;
+  background-color: white;
+  height: 600px;
+  transform: translate(30px, 30px);
+  width: 1px;
+}
+#line1 {
+  position: inherit;
+  background-color: white;
+  width: 1px;
+}
+footer {
+  background-color: var(--footer--color);
+  width: 100%;
+  content: "";
+  height: auto;
+  color: var(--background--color);
+}
+#online {
+  height: 12px;
+  width: 12px;
+  background-color: lawngreen;
+  border-radius: 50%;
+}
+
+/* about page */
+.project-container {
+  max-width: 40%;
+}
+.ifl,
+.y2b,
+.SD {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.ifl-i,
+.sd-i,
+.y2b-i {
+  display: inline;
+  margin: 10px 0;
+  max-width: 400px;
+  height: auto;
+}
